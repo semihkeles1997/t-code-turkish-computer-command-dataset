@@ -1,0 +1,22 @@
+{
+  "record_count": 2700,
+  "domain_distribution": {
+    "ofis_metin_düzenleme": 675,
+    "tarayıcı_internet": 675,
+    "temel_bilgisayar": 675,
+    "dosya_yazılım_geliştirme": 675
+  },
+  "task_count_distribution": {
+    "4": 371,
+    "3": 1060,
+    "2": 793,
+    "5": 80,
+    "1": 396
+  },
+  "duplicate_id_count": 0,
+  "duplicate_raw_command_count": 0,
+  "boundary_label_count": 3,
+  "task_token_label_count": 33,
+  "error_count": 0,
+  "errors_preview": []
+}

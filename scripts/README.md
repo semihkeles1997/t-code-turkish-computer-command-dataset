@@ -1,5 +1,10 @@
 # Scripts
 
-This folder contains the Python scripts used for data preparation, normalization, validation, training, evaluation, and result analysis.
+This folder contains utility scripts retained for the released T-Code v4 resource.
 
-If the original experiments were conducted in Google Colab, the exported notebooks should be placed under the `notebooks/` folder.
+Included scripts support:
+
+- structural dataset validation, and
+- inter-annotator agreement calculation.
+
+The original model-training environments were developed separately and were not preserved completely enough to distribute as fully reproducible training pipelines. The accompanying manuscript therefore reports only training details supported by the retained experimental records rather than reconstructing missing settings from assumed defaults.

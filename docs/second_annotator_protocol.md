@@ -1,15 +1,17 @@
 # Second Annotator Protocol
 
-A second independent annotator re-annotates a blind subset of the dataset.
+A second independent annotator re-annotated a blind subset of 300 commands from the final resource.
 
-The annotator receives only:
+The released 300-command subset was selected with random seed 42 and contains 75 commands from each of the four domains. The released summary also records the distribution by task count.
+
+The annotator received only:
 
 - `id`
 - `domain`
 - `raw_command`
 - `tokens`
 
-The annotator must not see:
+The annotator did not receive:
 
 - `normalized_command`
 - `task_segments`
@@ -17,4 +19,4 @@ The annotator must not see:
 - `boundary_labels`
 - `task_token_labels`
 
-Cohen's kappa is calculated separately for boundary labels and task-token labels.
+Agreement was calculated at token level, separately for boundary labels and task-token labels, using Cohen's kappa. The blind material, gold material, anonymized completed annotations, and summary metadata are retained under `data/second_annotator/`.

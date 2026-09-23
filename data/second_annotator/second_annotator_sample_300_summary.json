@@ -1,0 +1,21 @@
+{
+  "sample_size": 300,
+  "seed": 42,
+  "sampling_description": "Balanced across the four dataset domains.",
+  "domain_distribution": {
+    "dosya_yazılım_geliştirme": 75,
+    "ofis_metin_düzenleme": 75,
+    "temel_bilgisayar": 75,
+    "tarayıcı_internet": 75
+  },
+  "task_count_distribution": {
+    "1": 43,
+    "2": 95,
+    "3": 107,
+    "4": 45,
+    "5": 10
+  },
+  "blind_file": "second_annotator_sample_300_blind.xlsx",
+  "gold_file": "second_annotator_sample_300_gold.jsonl",
+  "completed_file": "second_annotator_completed_anonymized.csv"
+}

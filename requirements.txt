@@ -1,2 +1,2 @@
-# Utility scripts use Python standard library only.
-# Add training dependencies here if training notebooks/scripts are included.
+# The utility scripts included in this repository use the Python standard library.
+# A complete historical model-training environment is not distributed with this release.
