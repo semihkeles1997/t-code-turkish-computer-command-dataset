@@ -2,17 +2,18 @@
 __pycache__/
 *.pyc
 
-# Large archives and model checkpoints
-*.zip
+# Large model/checkpoint files
 *.pt
 *.pth
 *.bin
 *.safetensors
 checkpoint-*/
-models/
-model/
 wandb/
 runs/
+
+# Large archives are ignored except the curated result bundles retained in results/.
+*.zip
+!results/*.zip
 
 # Local backups
 *_backup/
