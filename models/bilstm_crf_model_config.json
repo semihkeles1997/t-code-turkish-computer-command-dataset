@@ -1,0 +1,11 @@
+{
+  "source": "recovered from archived BiLSTM-CRF model configuration and training history",
+  "vocabulary_size": 2235,
+  "label_count": 33,
+  "embedding_dim": 128,
+  "hidden_dim": 256,
+  "dropout": 0.35,
+  "max_epochs_in_retained_history": 40,
+  "best_epoch": 32,
+  "best_validation_macro_f1": 0.9352494597583996
+}
