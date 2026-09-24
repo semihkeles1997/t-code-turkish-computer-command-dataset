@@ -4,5 +4,5 @@ message: "If you use this dataset or code, please cite the corresponding paper a
 authors:
   - family-names: "Keleş"
     given-names: "Muhammet Semih"
-repository-code: "https://github.com/semihkeles1997/t-code-v4-turkish-computer-command-dataset"
+repository-code: "https://github.com/semihkeles1997/t-code-turkish-computer-command-dataset"
 license: "MIT"
