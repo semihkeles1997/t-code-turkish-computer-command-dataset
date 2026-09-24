@@ -1,6 +1,6 @@
 # Inter-Annotator Agreement
 
-To assess annotation reliability, a second independent annotator re-annotated a subset of 300 commands without access to the gold labels.
+To assess annotation reliability, a second annotator blindly re-annotated a subset of 300 commands without access to the gold labels.
 
 Agreement was calculated over 2,521 token-level decisions using Cohen's kappa. Boundary labels and task-token labels were evaluated separately.
 
@@ -11,7 +11,7 @@ Agreement was calculated over 2,521 token-level decisions using Cohen's kappa. B
 | Boundary labels | 2,521 | 0.9540 | 0.9234 |
 | Task-token labels | 2,521 | 0.9429 | 0.9385 |
 
-These results indicate a high level of agreement between annotators and support the consistency and reproducibility of the annotation scheme.
+These results indicate a high level of agreement between the two human annotations and support the consistency of the annotation scheme on the sampled material.
 
 ## Main boundary-label disagreements
 

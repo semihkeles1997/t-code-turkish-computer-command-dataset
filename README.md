@@ -4,7 +4,7 @@ This repository contains the T-Code v4 dataset and retained experimental materia
 
 ## Overview
 
-T-Code v4 contains 2,700 designed textual command records across four balanced domains (675 records per domain):
+T-Code v4 contains 2,700 curated textual command records across four balanced domains (675 records per domain):
 
 - `temel_bilgisayar`
 - `tarayıcı_internet`
@@ -13,7 +13,9 @@ T-Code v4 contains 2,700 designed textual command records across four balanced d
 
 Each record includes the command text together with task segments, task labels, tokens, boundary labels, and task-token labels. The task-token inventory contains 33 classes including `O`; the boundary inventory contains `B-TASK`, `I-TASK`, and `O`.
 
-The resource consists of designed textual examples rather than deployed-user interaction logs. It should therefore be treated as a purpose-built research benchmark, not as a population sample of naturally occurring Turkish computer-control traffic.
+The resource is a purpose-built benchmark rather than a collection of deployed-user interaction logs. The 2,500-record main resource was created through an AI-assisted, human-curated synthetic workflow: around 20 May 2026, GPT-5.0 was used through the ChatGPT web application to generate candidate command texts, which were manually screened, revised, or rejected. All structured gold annotations were created and verified manually. The later 200-record augmentation block and the 100-command challenge set were manually authored rather than generated with GPT.
+
+See `docs/data_generation_protocol.md` for the construction and provenance details.
 
 ## Canonical data files
 
@@ -45,7 +47,7 @@ Retained outputs for the final internal test and challenge evaluations are store
 
 ## Reproducibility scope
 
-This repository preserves the released datasets, fixed evaluation material, result files, documentation, and utility scripts that were retained from the study. It does **not** provide a complete reconstruction of every historical model-training environment. Some low-level training settings from the original runs were not retained consistently and are therefore not reconstructed from assumed defaults.
+This repository preserves the released datasets, fixed evaluation material, result files, documentation, and utility scripts retained from the study. The final BERTurk checkpoint archive and the BiLSTM-CRF model archive preserved substantial configuration information; those retained settings are documented under `docs/reproducibility_notes.md` and in the accompanying configuration files. Complete low-level training metadata were not retained uniformly for every historical mBERT and XLM-RoBERTa-base rerun, and missing values are not reconstructed from assumed defaults.
 
 The scripts under `scripts/` support structural dataset validation and inter-annotator agreement calculations; they should not be interpreted as the complete original training pipeline.
 
@@ -61,7 +63,7 @@ The scripts under `scripts/` support structural dataset validation and inter-ann
 - `results` — retained benchmark and analysis outputs
 - `llm_audit` — supplementary LLM-assisted consistency-audit material
 - `models` — notes about model checkpoints
-- `docs` — annotation, split, audit, and dataset documentation
+- `docs` — annotation, provenance, split, audit, reproducibility, and dataset documentation
 
 ## Safety and intended use
 

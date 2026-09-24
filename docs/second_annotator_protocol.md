@@ -1,6 +1,9 @@
 # Second Annotator Protocol
 
-A second independent annotator re-annotated a blind subset of 300 commands from the final resource.
+A second annotator blindly re-annotated a subset of 300 commands from the final resource.
+
+
+The second annotator had a computer-engineering background and technical familiarity with computer systems and the operations represented in the resource.
 
 The released 300-command subset was selected with random seed 42 and contains 75 commands from each of the four domains. The released summary also records the distribution by task count.
 
